@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="instruction">
+      <h2>Instruction</h2>
+      <p>This a simple calculator.</p>
+      <p>If you want a <b>Negative number</b>:<br>
+        - press button with number, then button <button>-n</button></p>
+      <p>If you want the <b> Square root</b> of the given number:<br>
+        - press button with number, then button <button>&radic;</button><br>
+        Note: If the number is negative, alert "Error!" is returned.</p>
+       <p>If you want to do the <b>Exponentiation</b>:<br>
+        - press button with number as base, then button <button>n<sup>x</sup></button>, then press button with number as exponent.
+      </p>
+    </div>
+ 
+  <div class="calculator-grid">
+    <div class="output">
+      <input disabled type="text" id="display" value="0" name="" placeholder="00000000000000000" class="calc-display-input">
+    </div>
+    <button data-clear class='clear'id="ac">AC</button>
+    <button data-delete class='clear' id="delete">DEL</button>
+    <button data-sqrt id="sqrt">&#8730;</button>
+    <button data-minus id="minus">-n</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>/</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>*</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>+</button>
+    <button data-decimal id="decimal">.</button>
+    <button data-number>0</button>
+    <button data-operation id="pow">n<sup>x</sup></button>
+    <button data-operation>-</button>
+    <button data-operation class="span-four" id="result">=</button>
+  </div>
+</body>
+</html>
